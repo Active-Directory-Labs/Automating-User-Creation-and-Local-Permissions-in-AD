@@ -162,7 +162,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 14. If you feel that enough accounts have been populated in the _EMPLOYEES OU, you can stop the code: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/14.%20If%20you%20feel%20that%20enough%20accounts%20have%20been%20populated%20in%20the%20_EMPLOYEES%20OU%20you%20can%20stop%20the%20code.png" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -170,9 +170,9 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 15. Take one of the new user names and try to log in to Client1 using Password1: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/15.%20Take%20one%20of%20the%20new%20user%20names%20and%20try%20to%20Login%20to%20Client1%20using%20Password1.png" height="80%" width="80%"/>
 <br />
-<img src="" height="80%" width="80%"alt="15.0"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/15.0%20Login%20accepted.png" height="80%" width="80%"alt="15.0"/>
 <br />
 </p>
 
