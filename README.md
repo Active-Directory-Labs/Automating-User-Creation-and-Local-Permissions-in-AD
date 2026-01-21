@@ -56,7 +56,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 
 <p align="center">
 1. Log in to your Domain Controller VM. You do this because Azure-created Domain Controllers have NLS and require authentication from the Domain Controller on login, so if the DC is off, the user cannot/will not be authenticated in the Domain Controller and therefore will not be provided access: <br/>
-<img src="" width="80%" alt=""/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/1LOGIN~1.PNG" width="80%" alt=""/>
 <br />
 <br />
 </p>
@@ -67,21 +67,21 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 2. In the Client VM, log in as an Admin Account, or an account under Domain Admins Security Group, and go to settings and then "About". In the About settings, click on Remote Desktop:
     <br/>
 <br/>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/2INTHE~1.PNG" height="80%" width="80%" alt=""/>
 <br />
 <br />
 </p>
 
 <p align="center">
 3. In the Remote Desktop Settings, click on "Select users that can remotely access this PC":  <br/>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/3.%20In%20the%20remote%20Desktop%20click%20on%20Select%20users%20that%20can%20remotely%20access%20this%20pc.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
 </p>
 
 <p align="center">
 4. In the Remote Desktop window, click on "add" to add a new user or OU/group that will be allowed to access this pc:<br/>
-<img src="" height="80%" width="80% alt=""/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/4.%20In%20the%20Remote%20Desktop%20window%20Click%20on%20add%20to%20add%20a%20new%20user%20or%20OU%20that%20will%20be%20allowed%20to%20access%20this%20pc..png" height="80%" width="80% alt=""/>
 <br />
 <br />
 </p>
@@ -89,13 +89,13 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 5. In the pop-up window, add Domain Users and click on Find Names. Once the names are found, click on OK to set the new users. The reason we add Domain Users to the list of allowed users for Remote Desktop on the Client/Computer is so that we are not always forced to log in using only accounts that have access to the Computer. Adding Domain Users will allow us to log in as any user as long as that user is a part of the domain, meaning any employee of the company can log in, even newly created employees/users, thus not forcing us to individually give access to this client/computer to each user. This would regularly be done on Group Policy.
 :  <br/>
-<img src="" height="80%" width="80%" alt=""/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/5INTHE~1.PNG" height="80%" width="80%" alt=""/>
 <br />
 <br />
 </p>
 <p align="center">
 6. Once everything is done, click on OK to apply the new settings:  <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/6.%20Once%20everything%20is%20done%20Click%20on%20OK%20to%20apply%20the%20new%20settings.png" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -103,7 +103,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 7. Once done, log out of the Admin Account on the Client VM: <br />
   <br/>
-<img src="" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/7.%20Once%20done%20log%20out%20of%20the%20Admin%20Account%20on%20the%20Client%20VM.png" width="80%"/>
 <br />
 <br />
 </p>
@@ -113,15 +113,15 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 8. Now we have to check if any user can access the Client VM. To do so, we first need to create new users. To create users in bulk, go to the DC VM Open ADUC and Powershell ISE, run Powershell as Admin.: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/8NOWWE~1.PNG" height="80%" width="80%"/>
 <br />
 <br />
 </p>
 
 <p align="center">
-9. Copy this code<a href=""> Link to code</a> into the PowerShell file console. If you can't see the console, click on the icon represented by a document with a star logo in the top-left corner. <br />
+9. Copy this code<a href="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/9.%20Generate-Names-Create-Users.txt.ps1"> Link to code</a> into the PowerShell file console. If you can't see the console, click on the icon represented by a document with a star logo in the top-left corner. <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/9COPYT~1.PNG" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -129,7 +129,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 10. After pasting the code, save it as a file on the desktop: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/10.%20After%20pasting%20the%20code%20save%20it%20as%20a%20file%20on%20the%20desktop.png" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -138,7 +138,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 11. Before running the code, make sure that you have a pre-created OU named _EMPLOYEES in ADUC. This will allow the code to have a place to save the new users beside the Domain Users OU: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/11BEFO~1.PNG" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -146,7 +146,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 12. Press enter to run the code, and if everything worked correctly, you should see new users being populated on the console: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/12PRES~1.PNG" height="80%" width="80%"/>
 <br />
 <br />
 </p>
@@ -154,7 +154,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 <p align="center">
 13. Under the created _EMPLOYEES OU, you should now also see the new users populated in the OU: <br />
   <br/>
-<img src="" height="80%" width="80%"/>
+<img src="https://github.com/Active-Directory-Labs/Automating-User-Creation-and-Local-Permissions-in-AD/blob/Zwelakhe-Y-How-to-allow-access-Resources/13.%20Under%20the%20created%20_EMPLOYEES%20OU%20you%20should%20now%20see%20the%20new%20users%20populated%20in%20the%20OU.png" height="80%" width="80%"/>
 <br />
 <br />
 </p>
