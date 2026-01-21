@@ -12,6 +12,7 @@ This lab is a practical guide to managing Windows Active Directory using PowerSh
 - <b>Azure</b>
 - <b>Powershell</b> 
 - <b>Active Directory</b>
+    - ADUC 
 
 <h2>Environments Used </h2>
 
